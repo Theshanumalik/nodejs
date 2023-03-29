@@ -40,7 +40,11 @@
       //   document.write("inside else");
       // }
 
-      let name = prompt("Enter your name: ");
+      // let name = prompt("Enter your name: ");
+
+      // if (name != "ali") {
+      //   document.write("you are not ali Fuck you");
+      // }
 
       // if (name == "tosif") {
       //   document.write("you are admin");
@@ -52,21 +56,33 @@
       //   document.write("Access denied");
       // }
 
-      switch (name) {
-        case "tosif":
-          document.write("you are admin");
-          break;
+      // switch (name) {
+      //   case "tosif":
+      //     document.write("you are admin");
+      //     break;
 
-        case "shanu":
-          document.write("you are admin");
-          break;
+      //   case "shanu":
+      //     document.write("you are admin");
+      //     break;
 
-        case "ali":
-          document.write("you are admin");
-          break;
+      //   case "ali":
+      //     document.write("you are admin");
+      //     break;
 
-        default:
-          document.write("Access denied");
+      //   default:
+      //     document.write("Access denied");
+      // }
+
+      let uname = "ali";
+      let pass = "password";
+
+      let givenName = prompt("Enter username: ");
+      let givenPass = prompt("Enter password: ");
+
+      if (givenName == uname || givenPass == pass) {
+        document.write("Welcome, " + givenName);
+      } else {
+        document.write("User not found.");
       }
     </script>
   </body>
