@@ -19,9 +19,55 @@
       //   } else {
       //     document.write("it's not a leap year");
       //   }
-      let name = prompt("Enter your name 🔥🔥");
-      let message = "Happy Birthday🎂🎂🎂 " + name;
-      document.write(message);
+      // let name = prompt("Enter your name 🔥🔥");
+      // let message = "Happy Birthday🎂🎂🎂 " + name;
+      // document.write(message);
+
+      // let score = prompt("Enter your score: 🔥");
+      // if (score >= 40) {
+      //   document.write("Congratulation you've pass.");
+      // } else {
+      //   document.write("Better Luck next time.");
+      // }
+
+      // if (score == 20) {
+      //   document.write("inside if");
+      // } else if (score == 25) {
+      //   document.write("inside else if");
+      // } else if (score == 30) {
+      //   document.write("inside else if");
+      // } else {
+      //   document.write("inside else");
+      // }
+
+      let name = prompt("Enter your name: ");
+
+      // if (name == "tosif") {
+      //   document.write("you are admin");
+      // } else if (name == "ali") {
+      //   document.write("you are admin");
+      // } else if (name == "shanu") {
+      //   document.write("you are admin");
+      // } else {
+      //   document.write("Access denied");
+      // }
+
+      switch (name) {
+        case "tosif":
+          document.write("you are admin");
+          break;
+
+        case "shanu":
+          document.write("you are admin");
+          break;
+
+        case "ali":
+          document.write("you are admin");
+          break;
+
+        default:
+          document.write("Access denied");
+      }
     </script>
   </body>
 </html>
