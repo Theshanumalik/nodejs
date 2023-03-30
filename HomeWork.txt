@@ -1,0 +1,8 @@
+RESUME MAKER
+name, college, city, age, degree, father name, address
+
+GRADE SYSTEM
+1st 2nd 3rd fail
+
+AREA OF A RECTANGLE
+length * bredth
