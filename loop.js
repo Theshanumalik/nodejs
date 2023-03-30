@@ -27,3 +27,10 @@ let number = 5;
 for (a = 1; a <= 10; a++) {
   console.log(number * a);
 }
+
+let i = 10;
+
+// do {
+//   console.log("Hello world", i);
+//   i++;
+// } while (i < 10);
