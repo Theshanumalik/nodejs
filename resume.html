@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESUME BUILDER</title>
+    <style>
+      html {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      table tr td {
+        text-transform: capitalize;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RESUME BUILDER</h1>
+    <script>
+      let name = prompt("Enter name: ");
+      let father_name = prompt("Enter father name: ");
+      let college = prompt("College: ");
+      let address = prompt("Address: ");
+
+      let resume = `
+        <center>
+        <table border="2px">
+        <tr>
+          <td>name</td>
+          <td>father name</td>
+          <td>Address</td>
+          <td>college</td>
+        </tr>
+        <tr>
+          <td>${name}</td>
+          <td>${father_name}</td>
+          <td>${address}</td>
+          <td>${college}</td>
+        </tr>
+    </table>
+    </center>
+      `;
+
+      document.write(resume);
+    </script>
+  </body>
+</html>
