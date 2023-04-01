@@ -13,15 +13,59 @@
       h1 {
         text-align: center;
       }
-      table tr td {
+      table {
+        border-collapse: collapse;
+        border: 1px solid silver;
+      }
+      thead th {
+        background-color: brown;
+        color: white;
+      }
+      table tr > * {
         text-transform: capitalize;
         padding: 10px;
+        text-align: left;
+      }
+      table tbody tr:nth-child(even) {
+        background-color: rgb(0, 0, 0, 0.2);
       }
     </style>
   </head>
   <body>
     <h1>RESUME BUILDER</h1>
-    <script>
+    <center>
+      <table>
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>father name</th>
+            <th>Address</th>
+            <th>college</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Shanu Malik</td>
+            <td>Naushad Malik</td>
+            <td>Nai ki thadi, jaipur</td>
+            <td>SS JAIN SUBODH College</td>
+          </tr>
+          <tr>
+            <td>Shanu Malik</td>
+            <td>Naushad Malik</td>
+            <td>Nai ki thadi, jaipur</td>
+            <td>SS JAIN SUBODH College</td>
+          </tr>
+          <tr>
+            <td>Shanu Malik</td>
+            <td>Naushad Malik</td>
+            <td>Nai ki thadi, jaipur</td>
+            <td>SS JAIN SUBODH College</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <!-- <script>
       let name = prompt("Enter name: ");
       let father_name = prompt("Enter father name: ");
       let college = prompt("College: ");
@@ -47,6 +91,6 @@
       `;
 
       document.write(resume);
-    </script>
+    </script> -->
   </body>
 </html>

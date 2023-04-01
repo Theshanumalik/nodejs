@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESULT BUILDER</title>
+    <style>
+      html {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      table {
+        width: 500px;
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+      thead th {
+        background-color: brown;
+        color: white;
+        text-align: left;
+      }
+      td,
+      th {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RESULT</h1>
+
+    <script>
+      let name, schoolName, english, maths, science, percentage;
+      name = prompt("Name: ");
+      schoolName = prompt("schoolName: ");
+      english = prompt("english: ");
+      maths = prompt("maths: ");
+      science = prompt("science: ");
+
+      let totalMarks = parseInt(english) + parseInt(maths) + parseInt(science);
+
+      percentage = (totalMarks / 300) * 100;
+
+      let result = `
+        <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>School Name</th>
+          <th>English</th>
+          <th>Mathametics</th>
+          <th>Science</th>
+          <th>Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>${name}</td>
+          <td>${schoolName}</td>
+          <td>${english}</td>
+          <td>${maths}</td>
+          <td>${science}</td>
+          <td>${percentage}</td>
+        </tr>
+      </tbody>
+    </table>
+        `;
+
+      document.write(result);
+    </script>
+  </body>
+</html>
