@@ -37,7 +37,7 @@
 
 // console.log(name.replace("sha", "ja"));
 
-// console.log(name.includes("z"));
+// console.log(name.includes("u"));
 
 // let fruites = "mango apple banana orange";
 
@@ -61,41 +61,41 @@
 
 // console.log(persons);
 
-let blogs = [
-  {
-    title: "how to make money",
-    content: "blah blah blah",
-    date: "22-2-24",
-    auther: "shanu malik",
-  },
-  {
-    title: "how to make money",
-    content: "blah blah blah",
-    date: "22-2-24",
-    auther: "shanu malik",
-  },
-  {
-    title: "how to make money",
-    content: "blah blah blah",
-    date: "22-2-24",
-    auther: "shanu malik",
-  },
-  {
-    title: "how to make money",
-    content: "blah blah blah",
-    date: "22-2-24",
-    auther: "shanu malik",
-  },
-];
+// let blogs = [
+//   {
+//     title: "how to make money",
+//     content: "blah blah blah",
+//     date: "22-2-24",
+//     auther: "shanu malik",
+//   },
+//   {
+//     title: "how to make money",
+//     content: "blah blah blah",
+//     date: "22-2-24",
+//     auther: "shanu malik",
+//   },
+//   {
+//     title: "how to make money",
+//     content: "blah blah blah",
+//     date: "22-2-24",
+//     auther: "shanu malik",
+//   },
+//   {
+//     title: "how to make money",
+//     content: "blah blah blah",
+//     date: "22-2-24",
+//     auther: "shanu malik",
+//   },
+// ];
 
-for (i = 0; i < blogs.length; i++) {
-  let blog = blogs[i];
-  document.write(`
-    <div>
-      <h3>${blog.title}</h3>
-      <p>${blog.content}</p>
-      <span>${blog.auther} At ${blog.date}</span>
-    </div>
-    <hr/>
-    `);
-}
+// for (i = 0; i < blogs.length; i++) {
+//   let blog = blogs[i];
+//   document.write(`
+//     <div>
+//       <h3>${blog.title}</h3>
+//       <p>${blog.content}</p>
+//       <span>${blog.auther} At ${blog.date}</span>
+//     </div>
+//     <hr/>
+//     `);
+// }
