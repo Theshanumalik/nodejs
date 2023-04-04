@@ -46,41 +46,41 @@ function makeCircle() {
 
 // console.log("helo wo");
 
-// const posts = [
-//   {
-//     image:
-//       "https://images.pexels.com/photos/14467936/pexels-photo-14467936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-//     title: "How to make Money",
-//     content:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, veritatis voluptas, numquam cupiditate quia ipsa soluta minus quis sed quam maxime at molestiae voluptate repellendus incidunt non dicta laborum asperiores?",
-//     readMoreHref: "github.com",
-//   },
-//   {
-//     image:
-//       "https://images.pexels.com/photos/14467936/pexels-photo-14467936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-//     title: "How to Make Instagram clone",
-//     content:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, veritatis voluptas, numquam cupiditate quia ipsa soluta minus quis sed quam maxime at molestiae voluptate repellendus incidunt non dicta laborum asperiores?",
-//     readMoreHref: "github.com",
-//   },
-//   {
-//     image:
-//       "https://images.pexels.com/photos/14467936/pexels-photo-14467936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-//     title: "How to Learn JavaScript",
-//     content:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, veritatis voluptas, numquam cupiditate quia ipsa soluta minus quis sed quam maxime at molestiae voluptate repellendus incidunt non dicta laborum asperiores?",
-//     readMoreHref: "github.com",
-//   },
-// ];
+const posts = [
+  {
+    image:
+      "https://images.pexels.com/photos/14467936/pexels-photo-14467936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "How to make Money",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, veritatis voluptas, numquam cupiditate quia ipsa soluta minus quis sed quam maxime at molestiae voluptate repellendus incidunt non dicta laborum asperiores?",
+    readMoreHref: "github.com",
+  },
+  {
+    image:
+      "https://images.pexels.com/photos/14467936/pexels-photo-14467936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "How to Make Instagram clone",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, veritatis voluptas, numquam cupiditate quia ipsa soluta minus quis sed quam maxime at molestiae voluptate repellendus incidunt non dicta laborum asperiores?",
+    readMoreHref: "github.com",
+  },
+  {
+    image:
+      "https://images.pexels.com/photos/14467936/pexels-photo-14467936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "How to Learn JavaScript",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, veritatis voluptas, numquam cupiditate quia ipsa soluta minus quis sed quam maxime at molestiae voluptate repellendus incidunt non dicta laborum asperiores?",
+    readMoreHref: "github.com",
+  },
+];
 
-// for (i = 0; i < posts.length; i++) {
-//   const element = posts[i];
+for (i = 0; i < posts.length; i++) {
+  const element = posts[i];
 
-//   const html = `<div class="post">
-//     <img src="${element.image}"/>
-//     <h1>${element.title}</h1>
-//     <p>${element.content}</p>
-//     <a href="${element.readMoreHref}">Read More</a>
-//   </div>`;
-//   document.write(html);
-// }
+  const html = `<div class="post">
+    <img src="${element.image}"/>
+    <h1>${element.title}</h1>
+    <p>${element.content}</p>
+    <a href="${element.readMoreHref}">Read More</a>
+  </div>`;
+  document.write(html);
+}
