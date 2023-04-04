@@ -43,6 +43,9 @@ function closeWin() {
 
 function updateDom() {
   cardContainer.innerHTML = "";
+  if (tasks.length === 0) {
+    cardContainer.innerHTML = "<p>Nothing to show.</p>";
+  }
   tasks.forEach((task, index) => {
     cardContainer.innerHTML += createCard(task, index);
   });
