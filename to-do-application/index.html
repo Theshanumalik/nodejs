@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO - Application Welcome</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <a href="#">TODO</a>
+      <button id="openWinBtn">Add task<i class="fa-solid fa-plus"></i></button>
+    </div>
+    <div class="search-bar">
+      <input type="search" placeholder="Search tasks..." />
+      <button><i class="fa fas fa-search"></i></button>
+    </div>
+
+    <div class="container">
+      <h3>AVAILABLE TASKS</h3>
+      <div class="card-container">
+        <div class="card">
+          <h3 class="card-heading">Buy Fruites</h3>
+          <p class="card-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+            similique numquam dicta perferendis perspiciatis possimus veritatis.
+          </p>
+          <div class="card-action">
+            <button class="edit"><i class="fa fas fa-edit"></i></button>
+            <button class="delete"><i class="fa fas fa-trash"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Window -->
+
+    <div class="window closeWindow">
+      <div class="win-box">
+        <form>
+          <input type="text" placeholder="title.." />
+          <textarea placeholder="description..."></textarea>
+          <button><i class="fa-solid fa-plus"></i>Add task</button>
+          <button type="reset">
+            <i class="fa-solid fa-rotate-right"></i> Reset
+          </button>
+          <button type="button" id="closeWinBtn" class="cancle">
+            <i class="fa-solid fa-xmark"></i> Close
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
