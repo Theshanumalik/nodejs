@@ -20,34 +20,22 @@
       <button id="openWinBtn">Add task<i class="fa-solid fa-plus"></i></button>
     </div>
     <div class="search-bar">
-      <input type="search" placeholder="Search tasks..." />
+      <input type="search" placeholder="Search tasks..." id="search-input" />
       <button><i class="fa fas fa-search"></i></button>
     </div>
 
     <div class="container">
       <h3>AVAILABLE TASKS</h3>
-      <div class="card-container">
-        <div class="card">
-          <h3 class="card-heading">Buy Fruites</h3>
-          <p class="card-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-            similique numquam dicta perferendis perspiciatis possimus veritatis.
-          </p>
-          <div class="card-action">
-            <button class="edit"><i class="fa fas fa-edit"></i></button>
-            <button class="delete"><i class="fa fas fa-trash"></i></button>
-          </div>
-        </div>
-      </div>
+      <div class="card-container"></div>
     </div>
 
     <!-- Window -->
 
     <div class="window closeWindow">
       <div class="win-box">
-        <form>
-          <input type="text" placeholder="title.." />
-          <textarea placeholder="description..."></textarea>
+        <form id="task-form">
+          <input type="text" placeholder="title.." required />
+          <textarea placeholder="description..." required></textarea>
           <button><i class="fa-solid fa-plus"></i>Add task</button>
           <button type="reset">
             <i class="fa-solid fa-rotate-right"></i> Reset
