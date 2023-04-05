@@ -26,11 +26,13 @@ taskForm.addEventListener("submit", function (e) {
 
 // search functionality
 searchInput.addEventListener("keyup", function (e) {
-  console.log("hyy");
-  if (!e.target.value) {
+  let keyword = e.target.value;
+  keyword = keyword.replace(/\s\s+/g, " ");
+  console.log(keyword);
+  if (!keyword) {
     return updateDom();
   }
-  searchTask(e.target.value);
+  searchTask(keyword);
 });
 
 function openWin() {
@@ -75,7 +77,7 @@ function createCard({ title, description }, id) {
 }
 
 function searchTask(query) {
-  let keyword = query.toLowerCase();
+  let keyword = query.toLowerCase().trim();
   Array.from(cardContainer.getElementsByClassName("card")).forEach(
     (element) => {
       let { title, description } = tasks[element.getAttribute("data-task-id")];
@@ -90,3 +92,9 @@ function searchTask(query) {
     }
   );
 }
+
+document.body.addEventListener("click", function (e) {
+  if (e.target == document.querySelector(".window")) {
+    closeWin();
+  }
+});

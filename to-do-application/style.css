@@ -89,8 +89,6 @@
   border-radius: 5px;
 }
 
-.card-heading {
-}
 .card-content {
   margin: 5px 0;
   font-size: 0.9em;
@@ -131,8 +129,10 @@
 .win-box {
   max-width: 400px;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 5px;
   overflow: hidden;
+  scale: 0;
+  animation: win-animation 0.1s ease-in-out 0.1s 1 alternate forwards;
 }
 .win-box form {
   display: flex;
@@ -177,4 +177,10 @@
 }
 .hide {
   display: none;
+}
+
+@keyframes win-animation {
+  100% {
+    scale: 1;
+  }
 }
