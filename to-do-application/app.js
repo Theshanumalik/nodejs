@@ -102,3 +102,6 @@ function searchTask(event) {
     }
   });
 }
+
+// EDIT FUNCTIONALITY
+function editTask(index) {}
