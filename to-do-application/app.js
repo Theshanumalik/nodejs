@@ -89,7 +89,7 @@ function deleteTask(index) {
 }
 
 function searchTask(event) {
-  let keyword = event.target.value;
+  let keyword = event.target.value.trim();
   // Search Keyword in the array
   tasks.forEach(function (element, index) {
     let isInclude =
