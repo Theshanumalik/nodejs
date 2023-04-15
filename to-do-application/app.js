@@ -1,26 +1,11 @@
 // ElEMENTS
-const tasks = [
-  {
-    title: "task1",
-    description: "task1 desc ",
-  },
-  {
-    title: "task2",
-    description: "task2 desc ",
-  },
-  {
-    title: "task3",
-    description: "task3 desc ",
-  },
-  {
-    title: "task4",
-    description: "task4 desc ",
-  },
-];
+const tasks = JSON.parse(localStorage.getItem("task")) || [];
 const openWinBtn = document.getElementById("openWinBtn");
 const closeWinBtn = document.getElementById("closeWinBtn");
+const closeEditWinBtn = document.getElementById("closeEditWinBtn");
 const cardContainer = document.querySelector(".card-container");
 const myWindow = document.querySelector(".window");
+const editWindow = document.querySelector(".window2");
 const taskTitle = document.getElementById("task-title");
 const taskDesc = document.getElementById("task-desc");
 const form = document.getElementById("task-add-form");
@@ -30,6 +15,7 @@ const searchBar = document.getElementById("searchBar");
 openWinBtn.addEventListener("click", openWin);
 closeWinBtn.addEventListener("click", closeWin);
 form.addEventListener("submit", addTask);
+closeEditWinBtn.addEventListener("click", closeEditWin);
 searchBar.addEventListener("keyup", searchTask);
 
 // functions
@@ -42,6 +28,7 @@ function addTask(event) {
     description: description,
   };
   tasks.push(taskObj);
+  localStorage.setItem("task", JSON.stringify(tasks));
   addToBody();
   form.reset();
   closeWin();
@@ -53,6 +40,14 @@ function openWin() {
 
 function closeWin() {
   myWindow.classList.add("closeWindow");
+}
+
+function openEditWin() {
+  editWindow.classList.remove("closeWindow");
+}
+
+function closeEditWin() {
+  editWindow.classList.add("closeWindow");
 }
 
 function addToBody() {
@@ -67,7 +62,7 @@ function addToBody() {
     <h3 class="card-heading">${element.title}</h3>
     <p class="card-content">${element.description}</p>
     <div class="card-action">
-      <button class="edit"><i class="fa fas fa-edit"></i></button>
+      <button class="edit" onclick="openEditWin()"><i class="fa fas fa-edit"></i></button>
       <button class="delete" onclick="deleteTask(${i})" ><i class="fa fas fa-trash"></i></button>
     </div>
     `;
