@@ -27,3 +27,6 @@ const myTasks = localStorage.getItem("task");
 
 // converting taskstring into json
 console.log(JSON.parse(myTasks));
+
+// clear item from the localstorage
+localStorage.clear("task");
